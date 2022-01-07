@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        
+        <div class="head">
+
+            <div class="victare"></div>
+
+           
+            <div class="gold"></div>
+        </div>
+
+        <img class="banner1" src="./images/banner1.jpg" alt="">
+
+        <div class="logo_main">
+            <div class="victare"></div>
+        </div>
+
+        <div class="text">
+            <div class="title">Victare Laser</div>
+            <div class="sloga">Nosso objetivo é oferecer ao cliente uma grande variedade de produtos com alta qualidade e fino acabamento. Conte com a gente para deixar seu espaço ainda mais deslumbrante! Sabemos da importância para você, por isso nossos produtos são feitos com tanto carinho!</div>
+        </div>
+
+        <div class="buy_now">
+            <p>Compre agora</p>
+            <img src="./images/shopping-cart (1).png" alt="">
+        </div>
+
+        <div class="market">
+            <div class="boxContent">
+                <div class="box">
+                    <div class='logo carrefour'></div>
+                </div>
+                <h2>Carrefour</h2>
+            </div>
+
+            <div class="boxContent">
+                <div class="box">
+                    <div class='logo elo7'></div>
+                </div>
+                <h2>Elo7</h2>
+            </div>
+
+            <div class="boxContent">
+                <div class="box">
+                    <div class='logo mercado'></div>
+                </div>
+                <h2>Mercado Livre</h2>
+            </div>
+
+            <div class="boxContent">
+                <div class="box">
+                    <div class='logo magalu'></div>
+                </div>
+                <h2>Magalu</h2>
+            </div>
+
+            <div class="boxContent">
+
+                <div class="box">
+                    <div class='logo shopee'></div>
+                </div>
+                <h2>Shopee</h2>
+            </div>
+
+        </div>
+        <footer></footer>
+        
+        
+
+
+        <!-- <div class="banner">
+            <div class="block">
+                <div class="ban verde"></div>
+                <div class="ban"></div>
+                <div class="ban azul"></div>
+            </div>
+        </div> -->
+        
+        <!-- <div class='logo carrefour'></div>
+        <div class='logo carrefour'></div>
+        <div class='logo carrefour'></div> -->
+        <!-- <div class="gold"></div> -->
+
+
+    </div>
+</body>
+<script>
+
+    function move(e){
+        console.log(e)
+    }
+    let banner = document.getElementsByClassName('banner')[0]
+
+    let offset = 0
+
+    document.getElementsByClassName('block')[0].addEventListener('mousedown',function(e){
+        console.log("SOLTOU")
+    },false)
+
+    let timer = null
+
+    function timing(){
+        clearTimeout(timer)
+        timer = setTimeout(function(){
+            console.log("parou")
+        },150)
+    }
+
+    function bar(e){
+        timing()
+        offset = e.target.scrollLeft
+        // if(offset>80){
+        //     e.target.scrollLeft = 300
+        // }
+        console.log(e.target.scrollLeft)
+    }
+
+    banner.onscroll = bar
+
+
+
+    // var mousePosition;
+    // var offset = [0,0];
+    // var div;
+    // var isDown = false;
+
+    // let block = document.getElementsByClassName('block')[0]
+    // let container = document.getElementsByClassName('banner')[0]
+    // var rect = container.getBoundingClientRect();
+    
+    // console.log(rect)
+    // console.log(block.getBoundingClientRect())
+
+    // block.addEventListener('mousedown', function(e) {
+    // isDown = true;
+    // offset = [
+    //     block.offsetLeft - e.clientX,
+    //     block.offsetTop - e.clientY
+    // ];
+    // }, true);
+
+    // document.addEventListener('mouseup', function() {
+    //     isDown = false;
+    //     const teste = block.getBoundingClientRect()
+    //     const desloc = teste.left+300
+    //     if(desloc-rect.left < (rect.width/2)*0.5){
+    //         block.style.left = container.style.left
+    //     }
+    //     else{
+    //         block.style.left = '0px'
+    //     }
+    //     // console.log(teste.left+300)
+        
+    // }, true);
+
+    // document.addEventListener('mousemove', function(event) {
+    //     event.preventDefault();
+    //     if (isDown) {
+    //         mousePosition = {
+
+    //             x : event.clientX,
+    //             y : event.clientY
+
+    //         };
+    //         block.style.left = (mousePosition.x + offset[0]) + 'px';
+    //     }
+    // }, true);
+
+    function newTab(url){
+        window.open(url, '_blank').focus();
+    }
+</script>
+</html>

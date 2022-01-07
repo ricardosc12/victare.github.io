@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.block{
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 300px;
+    height:150px;
+    /* background-color: black; */
+}
+.ban {
+    display: flex;
+    position: relative;
+    min-width: 300px;
+    height:150px;
+    background-color: red;
+}
+.verde{
+    background-color: green;
+}
+.azul{
+    background: blue;
+}
+.banner{
+    display: flex;
+    position: absolute;
+    overflow-x: scroll;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    /* background-color: black; */
+}
+.box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: #D6EAE6;
+    border-radius: 35px;
+}
+.logo {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo:hover::before{
+    box-shadow: 0px 0px 8px #343b42;
+}
+.carrefour{
+    background-image: url('../images/carrefour.png');
+}
+
+.elo7 {
+    background-size: 70%;
+    background-image: url('../images/elo7.png');
+}
+.face {
+    background-image: url('../images/face.png');
+}
+.instagram {
+    background-image: url('../images/instagram.png');
+}
+.magalu {
+    clip-path: circle(35%);
+    object-fit: cover;
+    background-size: 80%;
+    background-image: url('../images/magalu.png');
+}
+.mercado {
+    background-size: 85%;
+    background-image: url('../images/mercado.png');
+}
+.shopee {
+    background-size: 80%;
+    background-image: url('../images/shopee.png');
+}
+.tiktok {
+    background-image: url('../images/tiktok.png');
+}
+.whats {
+    background-image: url('../images/whats.png');
+}
+.victare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1cm;
+    height: 1cm;
+    background-size: 100%;
+    background-image: url('../images/victare.png');
+}
+.banner1{
+    width: 150vw;
+    height: auto;
+    background-size: auto auto;
+}
+
+/* .logo_box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    background-color: #FAF4F0;
+} */
+.container{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FAF4F0;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+.gold {
+    width: 100px;
+    height:60px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+.boxContent{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    height: 120px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 10px;
+    box-shadow: -10px 30px 20px rgb(180,180,180);
+    transition: all 0.3s;
+}
+.boxContent:hover{
+    transform: translateY(-2px);
+    box-shadow: -7px 20px 20px rgb(160,160,160);
+    transition: all 0.3s;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(70, 70, 70);
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.market{
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.head{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 5vw 0px 5vw;
+    height: 7vh;
+    max-height: 70px;
+    background: #34333C;
+}
+.gold{
+    display: flex;
+    position: relative;
+    right: -5vw;
+    width: 105%;
+    height: 2vh;
+    max-height: 20px;
+    border-radius: 10px;
+    /* background: white; */
+    /* background: linear-gradient(#976F2F,#CDAF5C,#8C632C,#B08242,#9A7332); */
+    background: linear-gradient(350deg,#976F2F 0%,#CDAF5C 40%,#8C632C 70%,#B08242 90%,#9A7332);
+}
+
+.logo_main{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 25vw;
+    max-width: 150px;
+    max-height: 150px;
+    bottom: 15px;
+    border-radius: 100px;
+    background: linear-gradient(#FFFAF1,#C9BEA9);
+    box-shadow: 0px 10px 20px rgb(210,210,210);
+    padding: 10px;
+}
+.logo_main .victare {
+    width: 100%;
+    height: 100%;
+}
+
+
+.title {
+    background: -webkit-linear-gradient(350deg,#976F2F 0%,#CDAF5C 40%,#8C632C 70%,#B08242 90%,#9A7332);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+.sloga{
+    width: 80vw;
+    text-align: center;
+    color:#8D8D8D;
+}
+.buy_now{
+    margin-top: 60px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: -10px 30px 20px rgb(180,180,180);
+    transition: all 0.3s;
+}
+
+.buy_now:hover{
+    transform: translateY(-2px);
+    box-shadow: -7px 20px 20px rgb(160,160,160);
+    transition: all 0.3s;
+}
+
+.buy_now img {
+    margin-left: 15px;
+    width: 30px;
+    height: auto;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    font-size: 20px;
+}
+.text{
+    font-size: 22px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tete{
+    height: 9990px;
+    width: 100%;
+}
+
+footer{
+    height: 100px;
+}
